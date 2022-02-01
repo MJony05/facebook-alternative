@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 10px;
+}
+.nav-search {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.nav-search input {
+  display: inline-block;
+  padding: 0.7rem 0 0.7rem 2.5rem;
+  border-radius: 20px;
+  border: none;
+  background-color: #f0f2f5;
+  margin: 0 0.4rem;
+}
+.nav-search .search-icon {
+  position: absolute;
+  left: 22%;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation div {
+  margin: 0 2rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 6px 0;
+}
+.ikonka {
+  position: relative;
+}
+.navigation div p,
+.nav-icon p {
+  position: absolute;
+  color: white;
+  padding: 1px 5px;
+  border-radius: 50%;
+  font-size: 14px;
+  background-color: crimson;
+  top: -4px;
+  right: -10px;
+}
+.video-icon::after {
+  content: "6555555555";
+
+  z-index: 1;
+}
+.profil {
+  display: flex;
+  align-items: center;
+}
+.profil-name {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+.profil-name img {
+  margin: 5px;
+}
+.nav-icon {
+  align-items: center;
+
+  display: flex;
+}
+.nav-icon .ikonka {
+  width: 40px;
+  height: 40px;
+  background-color: #f0f2f5;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+  border-radius: 50%;
+  align-items: center;
+}
+nav img {
+  cursor: pointer;
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 10px;
+  }
+}
