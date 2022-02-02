@@ -102,19 +102,23 @@ header {
   text-align: center;
 
   display: flex;
-  width: 80%;
-  margin: 0 auto;
+
   flex-direction: column;
   justify-content: center;
+  margin: 0 auto;
+}
+.for-back {
+  background-image: url(./images/Image\ 1.jpg);
+  background-repeat: no-repeat;
+  width: 80%;
+  margin: 0 auto;
+  height: 400px;
 }
 .myphoto {
   width: 200px;
   border-radius: 50%;
   border: 3px solid white;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 140px;
+  margin-top: 220px;
 }
 h1 {
   font-size: 32px;
@@ -180,7 +184,7 @@ main {
 .intro p {
   display: flex;
   align-items: center;
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   font-size: 14px;
   margin-left: 0.3rem;
 }
@@ -207,21 +211,21 @@ main {
   width: 100%;
 }
 
-.message .new-message {
+.new-message {
   display: flex;
   align-items: center;
   gap: 1rem;
 }
-.new-message input,
-.create-comment input {
+.new-message input {
   padding: 0.8rem 1rem;
   flex-grow: 1;
   border: none;
   border-radius: 1.5rem;
   background-color: #f0f2f5;
-  margin-bottom: 1rem;
+  margin-bottom: 0rem;
 }
 .message-icons {
+  margin-top: 1rem;
   display: flex;
   justify-content: center;
   border-top: 1px solid #e4e6eb;
@@ -318,8 +322,93 @@ main {
   align-items: center;
   gap: 0.4rem;
 }
+
 @media (max-width: 500px) {
   html {
     font-size: 10px;
+  }
+}
+@media (max-width: 941px) {
+  html {
+    font-size: 14px;
+  }
+  .navigation div {
+    margin: 0 1rem;
+  }
+  #yoqol {
+    display: none;
+  }
+  nav {
+    flex-direction: column;
+  }
+
+  .nav-search {
+    order: 3;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .nav-search input {
+    flex-grow: 1;
+  }
+  .nav-search .search-icon {
+    left: 60px;
+  }
+  .profil {
+    order: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .navigation {
+    order: 2;
+    gap: 2rem;
+  }
+  .for-back {
+    height: 300px;
+  }
+  .for-back img {
+    width: 100px;
+  }
+  .main-navbar a {
+    padding: 14px 7px;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .gallery {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .hide-nav {
+    display: none;
+  }
+  .for-back {
+    height: 100px;
+  }
+  .for-back img {
+    margin-top: 30px;
+    width: 90px;
+  }
+  .home h1 {
+    font-size: 1rem;
+  }
+  .left > div {
+    width: 100%;
+  }
+  .left,
+  .right {
+    margin: 0 auto;
+    width: 100%;
+  }
+  .gallery img {
+    width: 90%;
+  }
+  .cart > img {
+    width: 90%;
   }
 }
